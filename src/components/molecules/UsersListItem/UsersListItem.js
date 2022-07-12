@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-
+const erg = 9;
 const UsersListItem = ({ userData: { average, name, attendance = 0 } }) => (
   <li>
     <div>{average}</div>
