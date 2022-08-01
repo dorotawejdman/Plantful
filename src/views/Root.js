@@ -1,4 +1,4 @@
-import UsersList from 'components/organisms/UsersList/UsersList';
+import UsersList from 'components/molecules/UsersListItem/UsersList';
 import styled, { ThemeProvider } from 'styled-components';
 import Button from 'components/shared/Buttons/Button/Button';
 import IconButton from 'components/shared/Buttons/IconButton/IconButton';
