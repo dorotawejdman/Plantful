@@ -7,7 +7,6 @@ import { TbPlant2 } from 'react-icons/tb';
 const StyledIconButton = styled.button`
   width: 40px;
   height: 40px;
-  border-radius: ${({ theme }) => theme.border.radius};
   border: none;
   background-color: ${(props) => props.theme.colors[props.color]};
   display: flex;

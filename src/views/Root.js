@@ -6,6 +6,7 @@ import { theme } from 'styles/theme';
 import FormInput from 'components/shared/Form/FormInput/FormInput';
 import Header from 'components/shared/Header/Header';
 import LabelsList from 'components/smart/LabelsList';
+import LoginInput from 'components/shared/Form/FormInput/LoginInput';
 
 const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.neutral1};
@@ -20,6 +21,7 @@ function Root() {
         <Button text="display" color="accent2"></Button>
         <IconButton color="accent2"></IconButton>
         <FormInput></FormInput>
+        <LoginInput />
         <Header>Create plant</Header>
         <Header>Create list</Header>
         <LabelsList></LabelsList>

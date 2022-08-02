@@ -15,6 +15,10 @@ html{
 * {
   font-family: 'Nunito', sans-serif;
 }
+
+input, button {
+  border-radius: ${({ theme }) => theme.border.radius};
+}
 `;
 
 export default GlobalStyles;
