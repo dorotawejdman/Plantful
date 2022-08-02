@@ -3,8 +3,12 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.div`
   background-color: ${({ theme }) => theme.colors.primaryDark};
-  padding: 40px 0 10px 0;
+  padding-top: 40px;
+  height: ${({ theme }) => theme.height.header};
   text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
   h2 {
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.white};

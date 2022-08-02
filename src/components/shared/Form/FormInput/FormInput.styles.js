@@ -7,7 +7,7 @@ export const StyledFormInput = styled.div`
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.black};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.grayMedium};
     margin-top: 5px;
     padding-bottom: 5px;
     border-radius: 0;
