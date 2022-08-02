@@ -10,19 +10,26 @@ export const theme = {
     primaryDark: '#475B50',
     neutral1: '#F5F1EB',
     neutral2: '#EEE9E1',
+    neutral4: '#E9E4DC',
     neutral3: '#E0D7C8',
     grayMedium: '#828282',
     grayLight: '#CDCAC6',
     white: '#F5F1EB',
+    black2: '#151717',
     black: '#1C190A',
   },
   fontSize: {
     l: '25px',
     m: '20px',
+    sm: '18px',
     s: '16px',
     xs: '13px',
   },
   border: {
     radius: '4px',
+  },
+  height: {
+    header: '120px',
+    nav: '72px',
   },
 };

@@ -10,6 +10,7 @@ html{
 
 body {
   background-color: ${({ theme }) => theme.colors.neutral1};
+  padding-top: ${({ theme }) => theme.height.header};
 }
 
 *,*::after,*::before {
@@ -22,6 +23,16 @@ body {
 
 input, button {
   border-radius: ${({ theme }) => theme.border.radius};
+}
+
+
+h3 {
+  font-size:  ${({ theme }) => theme.fontSize.m};
+  color:  ${({ theme }) => theme.colors.black};
+}
+
+ul {
+  padding: 0;
 }
 `;
 
