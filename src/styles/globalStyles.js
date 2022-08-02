@@ -8,6 +8,10 @@ html{
   box-sizing: border-box;
 }
 
+body {
+  background-color: ${({ theme }) => theme.colors.neutral1};
+}
+
 *,*::after,*::before {
   box-sizing: inherit;
 }
