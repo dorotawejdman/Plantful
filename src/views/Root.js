@@ -7,6 +7,8 @@ import FormInput from 'components/shared/Form/FormInput/FormInput';
 import Header from 'components/shared/Header/Header';
 import LabelsList from 'components/smart/LabelsList';
 import LoginInput from 'components/shared/Form/FormInput/LoginInput';
+import Navigation from 'components/smart/Navigation';
+import Menu from 'components/shared/Menu/Menu';
 
 const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.neutral1};
@@ -26,6 +28,8 @@ function Root() {
         <Header>Create plant</Header>
         <Header>Create list</Header>
         <LabelsList></LabelsList>
+        <Menu></Menu>
+        <Navigation></Navigation>
       </Wrapper>
     </ThemeProvider>
   );
