@@ -11,7 +11,7 @@
     "node": true,
     "es6": true
   },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "rules": {
     "prettier/prettier": ["warn", { "singleQuote": true, "printWidth": 150 }]
     // "import/first": 0
