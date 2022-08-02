@@ -21,7 +21,8 @@ function Root() {
         <Button text="display" color="accent2"></Button>
         <IconButton color="accent2"></IconButton>
         <FormInput></FormInput>
-        <LoginInput />
+        <LoginInput>Login</LoginInput>
+        <LoginInput>Password</LoginInput>
         <Header>Create plant</Header>
         <Header>Create list</Header>
         <LabelsList></LabelsList>
