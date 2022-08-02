@@ -14,10 +14,10 @@ const StyledHeader = styled.div`
   }
 `;
 
-const Header = ({ title }) => {
+const Header = ({ children }) => {
   return (
     <StyledHeader>
-      <h2>{title}</h2>
+      <h2>{children}</h2>
     </StyledHeader>
   );
 };
