@@ -14,13 +14,19 @@ const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.neutral1};
 `;
 
+const showAlert = (info) => {
+  alert(`Hello ${info}`);
+};
+
 function Root() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Wrapper>
-        <Button text="add" color="primary"></Button>
-        <Button text="display" color="accent2"></Button>
+        <Button color="primary">add</Button>
+        <Button color="accent2" onClick={() => showAlert('Doris')}>
+          display
+        </Button>
         <IconButton color="accent2"></IconButton>
         <FormInput></FormInput>
         <LoginInput>Login</LoginInput>
