@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ReactComponent as PlusIcon } from 'assets/icons/Plus.svg';
@@ -7,9 +7,9 @@ import { ReactComponent as CallendarIcon } from 'assets/icons/Callendar.svg';
 import { ReactComponent as ListIcon } from 'assets/icons/List.svg';
 import { ReactComponent as SettingsIcon } from 'assets/icons/Settings.svg';
 import { flexAround, flexCenter } from 'styles/mixins';
-
+import Menu from 'components/shared/Menu/Menu';
 const StyledNavigation = styled.div`
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
   padding: 0 15px;
@@ -32,16 +32,20 @@ const StyledNavigation = styled.div`
 `;
 
 const Navigation = (props) => {
+  const [isMenuOpen, setMenuVisibility] = useState(false);
   return (
-    <StyledNavigation>
-      <ListIcon></ListIcon>
-      <CallendarIcon></CallendarIcon>
-      <div className="navBtn">
-        <PlusIcon></PlusIcon>
-      </div>
-      <PlantIcon></PlantIcon>
-      <SettingsIcon></SettingsIcon>
-    </StyledNavigation>
+    <>
+      {isMenuOpen ? <Menu></Menu> : <></>}
+      <StyledNavigation>
+        <ListIcon></ListIcon>
+        <CallendarIcon></CallendarIcon>
+        <button className="navBtn" onClick={() => setMenuVisibility((prevState) => !prevState)}>
+          <PlusIcon></PlusIcon>
+        </button>
+        <PlantIcon></PlantIcon>
+        <SettingsIcon></SettingsIcon>
+      </StyledNavigation>
+    </>
   );
 };
 
