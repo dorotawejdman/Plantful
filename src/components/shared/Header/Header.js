@@ -6,7 +6,7 @@ const StyledHeader = styled.div`
   padding-top: 40px;
   height: ${({ theme }) => theme.height.header};
   text-align: center;
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
   h2 {
