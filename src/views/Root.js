@@ -11,7 +11,7 @@ import PlantForm from 'components/smart/PlantForm';
 
 const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.neutral1};
-  padding-top: ${({ theme }) => theme.height.header};
+  top: ${({ theme }) => theme.height.header};
 `;
 
 const showAlert = (info) => {
