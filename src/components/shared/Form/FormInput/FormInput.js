@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledFormInput } from './FormInput.styles';
 
-const FormInput = (props) => {
+const FormInput = ({ type = 'text', children }) => {
   return (
     <StyledFormInput>
-      <input type="text"></input>
-      <label>desctipityon</label>
+      <input type={type}></input>
+      <label>{children}</label>
     </StyledFormInput>
   );
 };
