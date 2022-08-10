@@ -8,6 +8,8 @@ import { ReactComponent as ListIcon } from 'assets/icons/List.svg';
 import { ReactComponent as SettingsIcon } from 'assets/icons/Settings.svg';
 import { flexAround, flexCenter } from 'styles/mixins';
 import Menu from 'components/shared/Menu/Menu';
+import { Link } from 'react-router-dom';
+
 const StyledNavigation = styled.div`
   position: sticky;
   bottom: 0;
@@ -37,13 +39,21 @@ const Navigation = (props) => {
     <>
       {isMenuOpen ? <Menu></Menu> : <></>}
       <StyledNavigation>
-        <ListIcon></ListIcon>
-        <CallendarIcon></CallendarIcon>
+        <Link to="/">
+          <ListIcon></ListIcon>
+        </Link>
+        <Link to="/calendar">
+          <CallendarIcon></CallendarIcon>
+        </Link>
         <button className="navBtn" onClick={() => setMenuVisibility((prevState) => !prevState)}>
           <PlusIcon></PlusIcon>
         </button>
-        <PlantIcon></PlantIcon>
-        <SettingsIcon></SettingsIcon>
+        <Link to="/create-plant">
+          <PlantIcon></PlantIcon>
+        </Link>
+        <Link to="/">
+          <SettingsIcon></SettingsIcon>
+        </Link>
       </StyledNavigation>
     </>
   );
