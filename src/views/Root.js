@@ -9,8 +9,9 @@ import { Calendar } from 'pages/Calendar';
 
 const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.neutral1};
-  top: ${({ theme }) => theme.height.header};
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 `;
 
 function Root() {
