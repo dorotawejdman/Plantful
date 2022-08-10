@@ -7,7 +7,6 @@ const StyledLoginInput = styled.div`
   position: relative;
   margin: 20px;
   input {
-    width: 200px;
     height: 45px;
     background-color: transparent;
     border: 1px solid ${({ theme }) => theme.colors.primary4};
