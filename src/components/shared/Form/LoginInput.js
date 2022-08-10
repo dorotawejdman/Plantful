@@ -5,11 +5,12 @@ import styled from 'styled-components';
 
 const StyledLoginInput = styled.div`
   position: relative;
-  margin: 20px;
+  margin: 20px 10px;
   input {
-    height: 45px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid ${({ theme }) => theme.colors.primary4};
+    border-radius: ${({ theme }) => theme.border.radius};
     padding: 7px 13px 1px 13px;
     font-size: 18px;
     &:focus-visible {
