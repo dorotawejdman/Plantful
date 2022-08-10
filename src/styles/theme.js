@@ -3,6 +3,7 @@ export const theme = {
     accent1: '#b16078',
     accent2: '#c4ab5a',
     accent3: '#D5C67A',
+    accentLight: '#C68887',
     primary: '#4b5e53',
     primary2: '#53685C',
     primary3: '#6B7E73',

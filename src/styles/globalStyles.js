@@ -10,6 +10,8 @@ html{
 
 body {
   background-color: ${({ theme }) => theme.colors.neutral1};
+  overflow: hidden;
+  width:100vw;
 }
 
 *,*::after,*::before {
@@ -53,6 +55,10 @@ label {
 h3 {
   font-size:  ${({ theme }) => theme.fontSize.m};
   color:  ${({ theme }) => theme.colors.black};
+}
+
+p{
+  margin: 5px 10px;
 }
 
 ul {
