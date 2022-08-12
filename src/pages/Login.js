@@ -34,6 +34,7 @@ const Container = styled.div`
     top: 20;
     transform: scale(1) rotate(20deg);
     z-index: 3;
+    pointer-events: none;
   }
   .plant-right {
     position: absolute;
@@ -41,6 +42,8 @@ const Container = styled.div`
     top: 160px;
     z-index: 3;
     transform: scale(0.8) scaleX(-1);
+
+    pointer-events: none;
   }
 `;
 
